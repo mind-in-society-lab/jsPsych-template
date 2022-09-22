@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- TODO: Update title of survey (shown in browser) -->
+    <title>A Test Survey</title>
+    <meta charset="UTF-8">
+
+    <!---- STYLESHEETS ---->
+    <!-- TODO: Add additional css stylesheets used in assets/css -->
+    <link href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css" rel="stylesheet" type="text/css" />
+
+    <!-- TODO: Add remote plugin stylesheet for survey plugin (if needed) -->
+
+    <!---- SCRIPTS ---->
+    <script src="https://unpkg.com/jspsych@7.2.3"></script>
+    <!-- TODO: Uncomment line below for Pavlovia connector -->
+    <!-- <script src="lib/jspsych-7-pavlovia-2022.1.1.js"></script> -->
+   
+    <!-- TODO: Add additional js scripts used in assets/scripts -->
+    
+    <!-- TODO: Add remote plugin scipts for ALL objects in the timeline -->
+
+
+</head>
+
+<body></body>
+
+<script>
+    /**
+     * jsPsych script created for the Mind in Society Lab at the University of Michigan
+     * September 2022
+     * 
+     * @author Yuyang Zhong (@yuyang-zhong) for template
+     * @author TODO: NAME for study script
+     * 
+     * This work is licensed under CC-BY-NC-SA 4.0 International (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+     */
+
+    ////////* STUDY SETUP */////////
+    // Initialize jsPsych
+    var jsPsych = initJsPsych({
+        use_webaudio: false
+    });
+
+    // timeline 
+    var timeline = [];
+
+    // TODO: Pavlovia Connector object (uncomment when ready to deploy)
+    // var pavlovia_init = {
+    //     type: jsPsychPavlovia,
+    //     data: {
+    //         task: 'pavlovia-init'
+    //     },
+    //     command: "init"
+    // };
+
+    // timeline.push(pavlovia_init);
+
+    // TODO: Add additional study setup trial objects
+
+   
+
+    ////////* EXPERIMENT */////////
+    // TODO: Add study trials here
+
+
+
+    // TODO: Pavlovia Connector object (uncomment when ready to deploy)
+    // var pavlovia_finish = {
+    //     type: jsPsychPavlovia,
+    //     data: {
+    //         task: 'pavlovia-finish'
+    //     },
+    //     command: "finish",
+    //     participantId: // TODO: REPLACE WITH ID
+    // };
+
+    ////////* TIMELINE */////////
+    // TODO: Setup timeline
+    timeline.push(preload);
+
+    // TODO: Pavlovia Connector object (uncomment when ready to deploy)
+    // Recommend this object is **BEFORE** the trial to redirect for completion or display code
+    // timeline.push(pavlovia_finish);
+
+    // start the experiment
+    jsPsych.run(timeline);
+</script>
